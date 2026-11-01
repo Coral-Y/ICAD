@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 88" fill="none" role="img" aria-labelledby="title">
+<title id="title">ICAD 2026 — Aging and Disease</title>
+<g stroke="#008575" stroke-width="3.5" stroke-linecap="round">
+<path d="M29 9C5 21 5 51 29 64M29 9C53 21 53 51 29 64"/>
+<path d="M17 19h24M12 31h34M12 43h34M17 55h24" stroke-width="2" opacity=".65"/>
+</g>
+<circle cx="29" cy="9" r="4.5" fill="#008575"/>
+<circle cx="29" cy="64" r="4.5" fill="#008575"/>
+<text x="68" y="48" fill="#103b45" font-family="Arial,Helvetica,sans-serif" font-size="45" font-weight="700" letter-spacing="1">ICAD</text>
+<path d="M197 16v33" stroke="#b3c7c6" stroke-width="1.5"/>
+<text x="212" y="47" fill="#008575" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="400" letter-spacing="1">2026</text>
+<text x="70" y="72" fill="#42636b" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="600" letter-spacing="2.2">AGING &amp; DISEASE</text>
+</svg>

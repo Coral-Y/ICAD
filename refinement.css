@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;650;700;800&display=swap');
+
+/* A consistent type scale for the conference and its supporting pages. */
+body{font-family:'Plus Jakarta Sans','Segoe UI',Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.brand,.hero-edition strong,.day-number,.archive-number{font-family:'Plus Jakarta Sans','Segoe UI',Arial,sans-serif}
+h1,h2{font-weight:700;letter-spacing:-.045em;line-height:1.12}
+h3{font-weight:650;letter-spacing:-.025em;line-height:1.3}
+h2{font-size:clamp(32px,3.5vw,49px)}
+.section-top p,.panel p,.panel li,.theme p{font-size:15px;line-height:1.8}
+.kicker,.eyebrow{font-size:11px;letter-spacing:1.5px;line-height:1.7}
+.theme-num{font-size:11px;letter-spacing:.5px}
+.brand{font-weight:800;font-size:28px;letter-spacing:-1.2px;flex-shrink:0}
+.brand small,.day-number span{font-family:inherit}
+.brand small{font-size:8px;letter-spacing:2.5px}
+nav{gap:25px;font-size:12px}
+nav a{white-space:nowrap}
+.button{font-size:13px;font-weight:700;letter-spacing:.1px;border-radius:5px;min-height:49px}
+.event-strip small{font-size:10px;letter-spacing:1px}
+.event-strip strong{font-size:14px;font-weight:600}
+.text-link{font-size:14px}
+.theme h3{font-size:22px;font-weight:650;letter-spacing:-.6px}
+.status{font-size:10px;letter-spacing:.7px}
+.home-day h3{font-weight:650;letter-spacing:-.6px}
+.day-number{font-weight:600;letter-spacing:-3px}
+.footer-bottom{font-size:11px}
+
+/* The homepage header sits inside the photographic introduction. */
+body:has(.photo-hero) header{position:absolute;top:28px;left:0;right:0;z-index:5;background:transparent;color:white;height:112px;border-bottom:1px solid #ffffff25;margin:0 4%;padding:0 1%;gap:35px}
+body:has(.photo-hero) .brand-symbol{color:#d6f27d}
+body:has(.photo-hero) .button.small{background:white;color:#123331}
+.preview{height:28px;align-items:center;font-size:9px;letter-spacing:1px}
+.photo-hero{min-height:780px;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero-shade{background:linear-gradient(180deg,rgba(4,30,54,.45) 0%,rgba(4,30,54,.12) 30%,rgba(4,30,54,.28) 63%,rgba(4,30,54,.5) 100%)}
+.hero-photo{object-position:center 48%}
+.photo-hero .hero-copy{width:100%;max-width:1200px;padding:175px 6% 100px}
+.photo-hero .eyebrow{justify-content:center;color:#e4ecef;font-size:12px;letter-spacing:2px}
+.photo-hero h1{font-size:clamp(68px,7.6vw,112px);font-weight:700;line-height:1.06;letter-spacing:-.055em;margin:28px 0 24px}
+.photo-hero h1 br{display:none}
+.photo-hero h1 em{color:white}
+.photo-hero h1 em::before{content:none}
+.photo-hero .hero-subtitle{margin:0 auto;max-width:680px;font-size:20px;line-height:1.7;color:#edf2f3;font-weight:400}
+.photo-hero .hero-subtitle br{display:none}
+.hero-location{font-size:13px;letter-spacing:1.4px;margin:30px 0;font-weight:600}
+.photo-hero .actions{justify-content:center;gap:16px}
+.photo-hero .button{padding:17px 26px;min-width:200px}
+.photo-hero .button.outline{background:#082b3040;border-color:#ffffff9c}
+.hero-edition{display:none}
+.speaker-announcement h3,.archive-banner h3{font-weight:650}
+.photo-hero h1{letter-spacing:-.035em}
+.photo-hero h1,.photo-hero .hero-subtitle,.photo-hero .hero-location,.photo-hero .eyebrow{text-shadow:0 2px 16px rgba(0,15,30,.55)}
+.about-grid p,.section-top p,.panel p,.panel li,.theme p,.speaker-announcement p,.archive-banner p{color:#4c6358}
+.dark .section-top p{color:#c1d4cb}
+.section-top>div{min-width:0}
+.theme h3,.speaker-announcement h3,.archive-banner h3{overflow-wrap:break-word}
+@media(min-width:701px) and (max-width:950px){
+ .about-grid{grid-template-columns:1fr;gap:15px}
+ .section-top{align-items:start;flex-direction:column;gap:8px}
+ .section-top p{max-width:620px}
+ .section{padding-top:60px;padding-bottom:60px}
+ .home-days{grid-template-columns:1fr;gap:10px}
+ .deadlines-home{grid-template-columns:1fr;gap:35px}
+ .archive-number{font-size:58px;min-width:125px}
+ .archive-banner{gap:25px}
+ .closing-home{align-items:start;flex-direction:column}
+ .closing-home .actions{flex-direction:row}
+}
+.closing-home h2{font-size:clamp(36px,4vw,53px);font-weight:700}
+@media(min-width:1500px){body:has(.photo-hero) header{margin:0 calc((100vw - 1350px)/2);padding:0}}
+@media(max-width:1050px){
+ header{height:90px}
+ .menu{display:block;border:0;background:transparent;color:inherit;font-size:13px;font-weight:600;padding:12px 0 12px 20px}
+ .menu span{margin-left:12px}
+ nav{display:none;position:absolute;top:118px;left:0;right:0;z-index:10;flex-direction:column;align-items:stretch;background:var(--paper);padding:25px 6%;color:var(--ink);gap:20px;box-shadow:0 12px 25px #082b3015}
+ nav.open{display:flex}
+ body:has(.photo-hero) header{height:90px;top:28px}
+ body:has(.photo-hero) nav{top:90px;left:-4.4%;right:-4.4%}
+ body:has(.photo-hero) nav .button.small{background:var(--teal);color:white}
+ .photo-hero{min-height:720px}
+ .photo-hero .hero-copy{padding-top:150px}
+ .photo-hero h1{font-size:clamp(64px,8.8vw,90px)}
+}
+@media(max-width:700px){
+ .photo-hero{min-height:690px}
+ .photo-hero .hero-copy{padding:145px 6% 65px}
+ .photo-hero .eyebrow{max-width:340px;margin:0 auto;font-size:9px;letter-spacing:1.2px}
+ .photo-hero .dot{flex-shrink:0}
+ .photo-hero h1{font-size:clamp(47px,10.5vw,70px);letter-spacing:-.05em;line-height:1.13;margin:28px 0 22px}
+ .photo-hero h1 br{display:block}
+ .photo-hero h1 em::before{content:none}
+ .photo-hero .hero-subtitle{font-size:16px;max-width:350px;line-height:1.8}
+ .hero-location{font-size:10px;letter-spacing:1px;line-height:2;margin:25px 0}
+ .photo-hero .actions{gap:12px}
+ .photo-hero .button{min-width:0;padding:14px 18px;font-size:12px;gap:18px}
+ .photo-hero .hero-shade{background:linear-gradient(180deg,rgba(4,30,54,.5),rgba(4,30,54,.25) 45%,rgba(4,30,54,.5))}
+ .kicker{font-size:10px;letter-spacing:1.3px}
+ .about-grid p{font-size:16px}
+ .section-top p{font-size:14px}
+ .speaker-announcement h3{font-size:24px}
+ .footer-bottom{font-size:10px}
+}
+/* Scalable conference identity, with separate light and dark treatments. */
+header .brand{display:block;width:255px;height:66px;position:relative}
+header .brand img{display:block;width:100%;height:100%;object-fit:contain}
+header .brand .logo-light{display:none}
+body:has(.photo-hero) header .brand .logo-dark{display:none}
+body:has(.photo-hero) header .brand .logo-light{display:block}
+@media(max-width:700px){header .brand{width:220px;height:57px}}
+header .brand{width:240px;height:70px;padding:10px 16px;background:#fff;border-radius:5px}
+.footer-logo{background:#fff;border-radius:5px;padding:6px 14px;max-width:330px}
+.footer-logo img{display:block;width:100%;height:auto}
+@media(max-width:700px){header .brand{width:210px;height:62px;padding:9px 13px}.footer-logo{max-width:290px}}
+/* Display the transparent identity directly on its surrounding background. */
+header .brand{background:transparent;border-radius:0;padding:10px 0}
+.footer-logo{background:transparent;border-radius:0;padding:6px 0}
+@media(max-width:700px){header .brand{padding:9px 0}}
+/* Keep the conference name readable over detailed skyline photography. */
+.photo-hero .eyebrow{display:inline-flex;max-width:100%;padding:11px 18px;border-radius:5px;background:rgba(4,27,43,.82);border:1px solid rgba(255,255,255,.22);font-size:12px;font-weight:700;letter-spacing:1.2px;color:#fff;text-shadow:none;line-height:1.8;box-shadow:0 3px 16px rgba(0,15,30,.12)}
+.photo-hero .eyebrow .dot{flex:0 0 7px}
+@media(max-width:700px){.photo-hero .eyebrow{font-size:10px;padding:10px 13px;letter-spacing:.8px;max-width:350px;text-align:left}}
+/* Transparent conference label, with contrast provided by the lettering. */
+.photo-hero .eyebrow{background:transparent;border:0;box-shadow:none;font-size:13px;font-weight:800;text-shadow:0 1px 3px #041b2b,0 2px 10px rgba(4,27,43,.9)}
+@media(max-width:700px){.photo-hero .eyebrow{font-size:11px}}
+/* Larger hero information, scaled to remain readable on smaller screens. */
+.photo-hero .eyebrow{font-size:clamp(15px,1.35vw,19px);letter-spacing:1px;line-height:1.65;max-width:100%;padding:10px 0}
+.photo-hero .hero-subtitle{font-size:clamp(19px,1.75vw,25px);max-width:780px;line-height:1.65}
+.photo-hero .hero-location{font-size:clamp(14px,1.15vw,17px);line-height:1.8}
+@media(max-width:700px){.photo-hero .eyebrow{font-size:13px;max-width:350px;text-align:center;letter-spacing:.5px}.photo-hero .hero-subtitle{font-size:18px;max-width:350px}.photo-hero .hero-location{font-size:12px;letter-spacing:.6px}}
+/* White logo on photography and dark footer; original blue on light pages. */
+body:has(.photo-hero) header .brand .logo-light{filter:brightness(0) invert(1)}
+.footer-logo img{filter:brightness(0) invert(1)}
+/* Refined hero title: lighter weight, smaller scale, and clear word spacing. */
+.photo-hero h1{font-size:clamp(58px,6.45vw,95px);font-weight:600;letter-spacing:-.015em;word-spacing:.06em;line-height:1.15}
+@media(max-width:1050px){.photo-hero h1{font-size:clamp(54px,7.5vw,77px)}}
+@media(max-width:700px){.photo-hero h1{font-size:clamp(40px,9vw,60px);font-weight:600;letter-spacing:-.015em;word-spacing:.06em;line-height:1.18}}
+/* Balanced hero actions with a readable secondary button over photography. */
+.photo-hero .actions .button{width:230px;min-height:58px}
+.photo-hero .actions .button.outline{background:rgba(4,27,43,.68);border:1px solid rgba(255,255,255,.85);color:#fff}
+.photo-hero .actions .button.outline:hover{background:rgba(4,27,43,.85);filter:none}
+@media(max-width:700px){.photo-hero .actions .button{width:210px;min-height:52px;max-width:100%}}
+/* Conference registration primary action. */
+a.button[href="#registration"]{background:#007f78;color:#fff}
+a.button[href="#registration"]:hover{background:#006760;filter:none}
+/* Transparent framed registration action in the photographic hero. */
+.photo-hero .actions a.button[href="#registration"]{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.9);text-shadow:0 1px 4px rgba(4,27,43,.7)}
+.photo-hero .actions a.button[href="#registration"]:hover{background:rgba(255,255,255,.12);border-color:#fff;filter:none}
+/* Waterfront perspective gives the hero a calmer blue-hour backdrop. */
+.photo-hero .hero-photo{object-position:center 43%}
+/* Selected sunset photograph: retain the sky in the desktop and mobile crops. */
+.photo-hero .hero-photo{object-position:center top}
+.photo-hero .hero-copy{padding-top:135px;padding-bottom:145px}
+@media(max-width:1050px){.photo-hero .hero-copy{padding-top:125px;padding-bottom:135px}}
+@media(max-width:700px){.photo-hero .hero-photo{object-position:65% top}.photo-hero .hero-copy{padding-top:130px;padding-bottom:90px}}
+/* Restore the original aerial composition with a light readability overlay. */
+.photo-hero .hero-photo{object-position:center 48%}
+@media(max-width:700px){.photo-hero .hero-photo{object-position:60% center}}
+.speaker-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}.speaker-card{background:#fff;border:1px solid var(--line);overflow:hidden}.speaker-card img{display:block;width:100%;height:280px;object-fit:cover;object-position:center top;background:#e5ebe5}.speaker-card>div{padding:23px}.speaker-card h3{font-size:23px;letter-spacing:-.6px;margin:12px 0}.speaker-card p{font-size:13px;color:#4c6358;line-height:1.75}.speakers-home .speaker-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.speakers-home .speaker-card img{height:240px}.speakers-home .speaker-card h3{font-size:20px}.ticket-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.ticket-card{display:flex;flex-direction:column;align-items:start}.ticket-card .button{margin-top:auto}.ticket-price{font-size:42px;font-weight:700;margin:14px 0;color:var(--teal)}.program-period{margin-top:40px}.program-period .program-row h3{font-size:19px;line-height:1.4}.program-period .panel .program-row{grid-template-columns:85px 1fr;gap:12px}.content p a:not(.button){text-decoration:underline;text-underline-offset:3px}.event-strip strong{line-height:1.5;display:block}@media(max-width:1050px){.speaker-grid,.speakers-home .speaker-grid,.ticket-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.speaker-grid,.speakers-home .speaker-grid,.ticket-grid{grid-template-columns:1fr}.speaker-card img,.speakers-home .speaker-card img{height:320px}.program-period .panel .program-row{grid-template-columns:1fr}}
+/* Consistent payment actions and aligned fee rows after content import. */
+.ticket-card .button{background:#007f78;color:#fff}
+.ticket-card .button:hover{background:#006760;filter:none}
+.ticket-card h3{min-height:3.9em;margin-bottom:8px}
+.ticket-card>p:first-of-type{min-height:5.4em;margin:0}
+.ticket-card .ticket-price{margin:18px 0;font-variant-numeric:tabular-nums}
+.ticket-card .button{margin-top:auto}
+@media(max-width:600px){.ticket-card h3,.ticket-card>p:first-of-type{min-height:0}}
+.history-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:30px}.history-card{background:#fff;border:1px solid var(--line);overflow:hidden}.history-card>img{display:block;width:100%;height:250px;object-fit:cover}.history-copy{padding:26px}.history-copy h3{font-size:27px;letter-spacing:-.7px;margin:12px 0}.history-copy p{font-size:14px;color:#4c6358;line-height:1.8}.history-venue{min-height:3.6em}.history-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px}.history-links a{font-size:12px;font-weight:600;color:var(--teal);border-bottom:1px solid #bdcec6;padding-bottom:3px}.history-note{padding:12px 0;border-color:#d9e1d8}.history-note summary{font-size:12px;color:#6b5737}.archive-home .history-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.archive-home .history-card>img{height:210px}.archive-home .history-copy{padding:22px}.archive-home .history-copy h3{font-size:22px}@media(max-width:1000px){.archive-home .history-grid{grid-template-columns:1fr}.archive-home .history-card{display:grid;grid-template-columns:1fr 1.4fr}.archive-home .history-card>img{height:100%;min-height:250px}.history-venue{min-height:0}}@media(max-width:650px){.history-grid{grid-template-columns:1fr}.archive-home .history-card{display:block}.archive-home .history-card>img{height:230px;min-height:0}}
+.history-photo-unavailable{padding:30px;background:#e4ece7;min-height:190px;display:flex;flex-direction:column;align-items:start;justify-content:center;color:#234b49}.history-photo-unavailable>span{font-size:25px;font-weight:700}.history-photo-unavailable p{font-size:13px}.history-photo-unavailable a{font-size:12px;text-decoration:underline}
+.history-card>img[src="history/beijing.jpg"]{object-fit:contain;background:#f2f1ec}
+.history-card>img[src="history/shanghai.jpg"],.archive-home .history-card>img[src="history/shanghai.jpg"]{object-fit:contain;background:#f2f1ec}
+/* Practical information remains easy to scan across screen sizes. */
+.conference-shortcuts{padding-top:50px;padding-bottom:50px;background:#edf1e9}
+.conference-shortcuts .directory a{font-size:14px;padding:18px 22px}
+/* Archive images retain complete group photographs in a consistent frame. */
+.history-photo-button{display:block;position:relative;width:100%;padding:0;border:0;background:#e8ece7;color:var(--ink);text-align:left;overflow:hidden}
+.history-photo-button img{display:block;width:100%;height:250px;object-fit:contain}
+.history-photo-button>span{position:absolute;right:12px;bottom:12px;padding:5px 10px;border-radius:3px;background:#082b30df;color:white;font-size:11px}
+.history-photo-button:hover>span{background:#007f78}
+.archive-home .history-photo-button img{height:210px}
+#photo-viewer{max-width:min(1200px,94vw);width:fit-content;max-height:94vh;padding:20px;border:0;border-radius:6px;background:#f6f7f2;color:var(--ink)}
+#photo-viewer::backdrop{background:rgba(2,18,25,.85)}
+#photo-full{display:block;max-width:100%;max-height:75vh;object-fit:contain;margin-top:12px}
+#photo-caption{font-size:14px;margin-bottom:0}
+.photo-close{display:block;margin-left:auto;padding:8px 16px;border:1px solid #b3c7bd;background:white;border-radius:3px;color:var(--ink)}
+.program-status{display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:16px 0;color:#52685c;font-size:12px}
+.program-track{margin:0;align-self:start}
+.program-track summary{display:flex;flex-direction:column;gap:10px;list-style:none;cursor:pointer}
+.program-track summary::after{content:'+';font-size:25px;color:var(--teal);align-self:flex-end}
+.program-track[open] summary::after{content:'−'}
+.program-track summary strong{font-size:21px;line-height:1.4;font-weight:650;letter-spacing:-.4px}
+.program-track summary small{font-size:12px;font-weight:400;color:#52685c}
+.program-track .program-row{padding:20px 0}
+.button:focus-visible,.photo-close:focus-visible,.history-photo-button:focus-visible{outline:3px solid #149c87;outline-offset:4px}
+@media(max-width:1000px){.archive-home .history-photo-button img{height:100%;min-height:240px}}
+@media(max-width:650px){.history-photo-button img,.archive-home .history-photo-button img{height:230px;min-height:0}.program-status{align-items:start;flex-direction:column}.history-links a{min-height:32px;display:inline-flex;align-items:center}.tabs button{min-height:44px}.panel{padding:24px}.panel a[href^="mailto:"]{overflow-wrap:anywhere}#photo-viewer{padding:14px}.program-track summary strong{font-size:19px}}
